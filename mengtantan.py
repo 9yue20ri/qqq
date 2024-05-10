@@ -1,0 +1,14 @@
+
+# -*- coding: GBK -*-
+# -*- coding: UTF-8 -*-
+# coding=gbk
+
+
+import streamlit as st
+
+st.set_page_config(page_title="ÃÈÌ¹Ì¹µÄÍרÕ¾", page_icon="?", layout="wide")
+
+st.title("ÎÒÊÇÃÈÌ¹Ì¹")
+
+
+
