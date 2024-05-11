@@ -1,6 +1,6 @@
-# -*- coding: GBK -*-
+
 # -*- coding: UTF-8 -*-
-# coding=gbk
+# coding= UTF-8
 
 
 import streamlit as st
