@@ -1,21 +1,27 @@
-
-#-*-编码：GBK-*-
-#-*-编码：UTF-8-*-
+# -*- coding: GBK -*-
+# -*- coding: UTF-8 -*-
 # coding=gbk
 
 
-进口 流线型作为标准
+import streamlit as st
+from streamlit_option_menu import option_menu
 
-圣彼得堡设置页面配置 (page_title= &#34;Modern Intelligent Website&#34;, page_icon= &#34;?&#34;, layout=“宽” )
 
-具有圣彼得堡侧边栏 :
-choose =选项_菜单 ( &#34;Modern Intelligent Website&#34; , [ Introduction , Generate Table , &#34;AI chat&#34; , International Map , Function Query , &#34;Robot member&#34; ,
- &#34;Beauty appraisal&#34; , Picture , Translation , EBook , Send Mail , Map , Data Visualization ,
- &#34;Online speech synthesis&#34; , Music/Video , &#34;Chatbot&#34; ] ,
-icons= [“盒子填充” ,“银行” ,“徽章ar-fill” ,“奖项” ,“活动” ,
-“警报” , “亚历克斯” ,“安卓2” ,“苹果” ,“房子” ,“书把手” ,
-“bar-chart” ,“徽章-vo” ,“吊杆箱填充” ,“演员” ,“云加载” ] ,
-menu_icon=“靶心”, default_index= zero )
+
+#from PIL import Image
+# 设置页面配置
+st.set_page_config(page_title="现代智能网站", page_icon="?", layout="wide")
+
+
+# 配置左侧菜单项
+with st.sidebar:
+    choose = option_menu("现代智能网站", ["介绍","生成表格","AI聊天","国际地图", "功能查询","机器人成员",
+                                          "颜值鉴定", "图片","翻译","电子书","发送邮件","地图","数据可视化",
+                                          "在线语音合成","音乐/视频","聊天机器人"],
+                         icons=["box-fill","bank","badge-ar-fill","award","activity",
+                                "alarm","alexa","android2","apple",'house', 'book-half',
+                                'bar-chart', 'badge-vo',"boombox-fill","cast","cloud-upload"],
+                         menu_icon="bullseye", default_index=0)
 
 
 
